@@ -1,0 +1,93 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-SK-093",
+  "product_name": "教室产能与满班率优化",
+  "product_type": "Skill",
+  "repository_name": "edu-classroom-capacity-optimizer",
+  "repository_url": "https://github.com/jinlize-tech/edu-classroom-capacity-optimizer",
+  "product_version": "1.0.0",
+  "batch": 1,
+  "business_category": "12 经营决策与财务规划中心",
+  "high_risk": false,
+  "deterministic": true,
+  "agent": false,
+  "core_outputs": [
+    "产能热区表",
+    "满班率",
+    "瓶颈"
+  ],
+  "optional_outputs": [
+    "空档",
+    "情景比较",
+    "调整步骤",
+    "风险项"
+  ],
+  "all_outputs": [
+    "产能热区表",
+    "满班率",
+    "瓶颈",
+    "空档",
+    "情景比较",
+    "调整步骤",
+    "风险项"
+  ],
+  "human_review_required": false,
+  "reviewer_role": "业务负责人",
+  "commercial_boundary": null,
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "rooms",
+    "open_hours",
+    "classes",
+    "period",
+    "capacity_rules"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "rooms": {
+      "type": "array"
+    },
+    "open_hours": {
+      "type": "array"
+    },
+    "classes": {
+      "type": "array"
+    },
+    "period": {
+      "type": "string"
+    },
+    "demand_assumptions": {
+      "type": "array"
+    },
+    "capacity_rules": {
+      "type": "string"
+    }
+  },
+  "expected_scenario_count": 13,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

@@ -1,0 +1,32 @@
+{
+  "number": 93,
+  "product_id": "JLZ-EDU-SK-093",
+  "candidate_id": "CAND-032",
+  "chinese_name": "教室产能与满班率优化",
+  "english_name": "Classroom Capacity Optimizer",
+  "repository_name": "edu-classroom-capacity-optimizer",
+  "repository_url": "https://github.com/jinlize-tech/edu-classroom-capacity-optimizer",
+  "product_type": "Skill",
+  "category": "12 经营决策与财务规划中心",
+  "batch": 1,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "产能热区表",
+    "满班率",
+    "瓶颈"
+  ],
+  "optional_outputs": [
+    "空档",
+    "情景比较",
+    "调整步骤",
+    "风险项"
+  ],
+  "high_risk": false,
+  "deterministic": true,
+  "scenario_count": 13,
+  "package_path": "dist/edu-classroom-capacity-optimizer-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}

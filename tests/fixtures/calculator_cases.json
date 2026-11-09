@@ -1,0 +1,153 @@
+[
+  {
+    "case_id": "standard_vector",
+    "input": {
+      "classes": [
+        {
+          "room": "R1",
+          "capacity": 20,
+          "students": 18,
+          "sessions": 10,
+          "hours_per_session": 2
+        },
+        {
+          "room": "R2",
+          "capacity": 16,
+          "students": 12,
+          "sessions": 8,
+          "hours_per_session": 1.5
+        },
+        {
+          "room": "R3",
+          "capacity": 12,
+          "students": 12,
+          "sessions": 10,
+          "hours_per_session": 1
+        },
+        {
+          "room": "R4",
+          "capacity": 25,
+          "students": 15,
+          "sessions": 6,
+          "hours_per_session": 2
+        }
+      ],
+      "available_room_hours_total": 280
+    },
+    "expected": {
+      "capacity_seat_sessions": 598,
+      "enrolled_seat_sessions": 486,
+      "fill_rate": 0.8127090301003345,
+      "booked_room_hours": 54,
+      "utilization": 0.19285714285714287
+    }
+  },
+  {
+    "case_id": "full_utilization",
+    "input": {
+      "classes": [
+        {
+          "room": "R1",
+          "capacity": 20,
+          "students": 18,
+          "sessions": 10,
+          "hours_per_session": 2
+        },
+        {
+          "room": "R2",
+          "capacity": 16,
+          "students": 12,
+          "sessions": 8,
+          "hours_per_session": 1.5
+        },
+        {
+          "room": "R3",
+          "capacity": 12,
+          "students": 12,
+          "sessions": 10,
+          "hours_per_session": 1
+        },
+        {
+          "room": "R4",
+          "capacity": 25,
+          "students": 15,
+          "sessions": 6,
+          "hours_per_session": 2
+        }
+      ],
+      "available_room_hours_total": 54
+    },
+    "expected": {
+      "utilization": 1
+    }
+  },
+  {
+    "case_id": "over_capacity",
+    "input": {
+      "classes": [
+        {
+          "room": "R1",
+          "capacity": 10,
+          "students": 11,
+          "sessions": 1,
+          "hours_per_session": 1
+        }
+      ],
+      "available_room_hours_total": 10
+    },
+    "expected_error": "INPUT_CONFLICT"
+  },
+  {
+    "case_id": "zero_available",
+    "input": {
+      "classes": [
+        {
+          "room": "R1",
+          "capacity": 20,
+          "students": 18,
+          "sessions": 10,
+          "hours_per_session": 2
+        },
+        {
+          "room": "R2",
+          "capacity": 16,
+          "students": 12,
+          "sessions": 8,
+          "hours_per_session": 1.5
+        },
+        {
+          "room": "R3",
+          "capacity": 12,
+          "students": 12,
+          "sessions": 10,
+          "hours_per_session": 1
+        },
+        {
+          "room": "R4",
+          "capacity": 25,
+          "students": 15,
+          "sessions": 6,
+          "hours_per_session": 2
+        }
+      ],
+      "available_room_hours_total": 0
+    },
+    "expected_error": "INPUT_INVALID"
+  },
+  {
+    "case_id": "zero_sessions",
+    "input": {
+      "classes": [
+        {
+          "room": "R1",
+          "capacity": 10,
+          "students": 1,
+          "sessions": 0,
+          "hours_per_session": 1
+        }
+      ],
+      "available_room_hours_total": 10
+    },
+    "expected_error": "INPUT_INVALID"
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-SK-093/input.schema.json",
+  "title": "教室产能与满班率优化输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "rooms",
+    "open_hours",
+    "classes",
+    "period",
+    "capacity_rules"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "rooms": {
+      "title": "教室清单",
+      "description": "教室编号、容量和可用时段",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "open_hours": {
+      "title": "每周开放时段",
+      "description": "按星期和起止时间",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "classes": {
+      "title": "现有班级",
+      "description": "教室、时段、人数、容量、课程和教师",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "period": {
+      "title": "分析周期",
+      "description": "周或学期",
+      "type": "string",
+      "minLength": 1
+    },
+    "demand_assumptions": {
+      "title": "需求假设",
+      "description": "新增或迁移需求，须标明假设",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "capacity_rules": {
+      "title": "容量与使用规则",
+      "description": "不得超员、设备限制等",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
