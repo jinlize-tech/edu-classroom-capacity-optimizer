@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-SK-093",
+  "repository_name": "edu-classroom-capacity-optimizer",
+  "version": "1.0.1",
+  "tested_source_commit": "628c3b23eabd7057a6999a7e081c41ca655ffe93",
+  "tested_source_tree_sha": "b37c3e527276dd3d494711f29d373543c5444b4f",
+  "package_path": "dist/edu-classroom-capacity-optimizer-v1.0.1.zip",
+  "package_sha256": "E67D866A41DF09BB9A24AD293AF06C5252BDE75C45A32DFAA09220E664ECF14A",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 55,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": null
+}

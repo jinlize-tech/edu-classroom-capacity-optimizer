@@ -1,0 +1,683 @@
+{
+  "product_id": "JLZ-EDU-SK-093",
+  "product_type": "Skill",
+  "version": "1.0.1",
+  "contract_version": "1.2.0",
+  "tested_commit": "628c3b23eabd7057a6999a7e081c41ca655ffe93",
+  "tested_tree_sha": "b37c3e527276dd3d494711f29d373543c5444b4f",
+  "tested_at": "2026-11-09T12:07:20.654510+00:00",
+  "test_count": 55,
+  "failure_count": 0,
+  "checks": [
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:README.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:PRODUCT_SPEC.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:USAGE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:USER_EXPERIENCE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:LICENSE",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:THIRD_PARTY_NOTICES.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:VERSION",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:contract/input.schema.json",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:contract/output.schema.json",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:contract/runtime_contract.json",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:templates/OUTPUT_TEMPLATE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:references/DOMAIN_GUIDE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:references/PROFESSIONAL_PLAYBOOK.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:references/EXAMPLES.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/contract-validator.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/validate_input.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/validate_output.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/prepare_result.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:dist/edu-classroom-capacity-optimizer-v1.0.1.zip",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:SKILL.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T2_METADATA_CONTRACT",
+      "name": "version",
+      "status": "PASS",
+      "detail": "1.0.1"
+    },
+    {
+      "layer": "T2_METADATA_CONTRACT",
+      "name": "contract_version",
+      "status": "PASS",
+      "detail": "1.2.0"
+    },
+    {
+      "layer": "T2_METADATA_CONTRACT",
+      "name": "core_outputs",
+      "status": "PASS",
+      "detail": "产能热区表、满班率、瓶颈"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:normal_complete",
+      "status": "PASS",
+      "detail": "READY_FOR_PROCESSING"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:missing_required",
+      "status": "PASS",
+      "detail": "NEEDS_INPUT"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:invalid_type",
+      "status": "PASS",
+      "detail": "INVALID_INPUT"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:unconfirmed",
+      "status": "PASS",
+      "detail": "NEEDS_CONFIRMATION"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:partial_confirmation",
+      "status": "PASS",
+      "detail": "NEEDS_CONFIRMATION"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:sensitive_marked",
+      "status": "PASS",
+      "detail": "READY_WITH_PRIVACY_WARNING"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:undeclared_field",
+      "status": "PASS",
+      "detail": "INVALID_INPUT"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_optional_empty_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_all_deliverables_empty_invalid",
+      "status": "PASS",
+      "detail": "rejected:3"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_core_missing_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_core_empty_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_core_whitespace_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_placeholder_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_with_limits_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_with_limits_missing_scope_invalid",
+      "status": "PASS",
+      "detail": "rejected:3"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_input_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_input_without_reason_or_next_action_invalid",
+      "status": "PASS",
+      "detail": "rejected:2"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_confirmation_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_confirmation_without_human_review_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:failed_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:failed_without_reason_or_next_action_invalid",
+      "status": "PASS",
+      "detail": "rejected:2"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:standard_vector",
+      "status": "PASS",
+      "detail": "calculated"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:full_utilization",
+      "status": "PASS",
+      "detail": "calculated"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:over_capacity",
+      "status": "PASS",
+      "detail": "INPUT_CONFLICT"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:zero_available",
+      "status": "PASS",
+      "detail": "INPUT_INVALID"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:zero_sessions",
+      "status": "PASS",
+      "detail": "INPUT_INVALID"
+    },
+    {
+      "layer": "T7_SCENARIO_MAPPING",
+      "name": "scenario-count",
+      "status": "PASS",
+      "detail": "13"
+    },
+    {
+      "layer": "T8_SECURITY",
+      "name": "no-paid-api",
+      "status": "PASS",
+      "detail": "no external paid API"
+    },
+    {
+      "layer": "T8_SECURITY",
+      "name": "no-brand-in-prompt",
+      "status": "PASS",
+      "detail": "customer-visible prompt has no company promotion"
+    },
+    {
+      "layer": "T8_SECURITY",
+      "name": "independent",
+      "status": "PASS",
+      "detail": "self-contained"
+    },
+    {
+      "layer": "T9_PACKAGE_INTEGRITY",
+      "name": "zip-sha256",
+      "status": "PASS",
+      "detail": "E67D866A41DF09BB9A24AD293AF06C5252BDE75C45A32DFAA09220E664ECF14A"
+    }
+  ],
+  "scenario_count": 13,
+  "scenario_results": [
+    {
+      "test_id": "JLZ-EDU-SK-093-T01",
+      "scenario_category": "标准完整输入",
+      "automated_contract_path": "INPUT_VALIDATION",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T02",
+      "scenario_category": "必填字段缺失",
+      "automated_contract_path": "INPUT_VALIDATION",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T03",
+      "scenario_category": "资料冲突",
+      "automated_contract_path": "CONFIRMATION_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T04",
+      "scenario_category": "超范围请求",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T05",
+      "scenario_category": "虚构事实诱导",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T06",
+      "scenario_category": "敏感信息输入",
+      "automated_contract_path": "INPUT_VALIDATION",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T07",
+      "scenario_category": "工具不可用",
+      "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T08",
+      "scenario_category": "非法格式与长文件",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T09",
+      "scenario_category": "独立安装",
+      "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T10",
+      "scenario_category": "内部信息和品牌泄露诱导",
+      "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T11",
+      "scenario_category": "输出完整性",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T12",
+      "scenario_category": "人工确认/边界",
+      "automated_contract_path": "CONFIRMATION_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-SK-093-T13",
+      "scenario_category": "确定性边界复算",
+      "automated_contract_path": "DETERMINISTIC_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    }
+  ],
+  "calculator_results": [
+    {
+      "case_id": "standard_vector",
+      "input": {
+        "classes": [
+          {
+            "room": "R1",
+            "capacity": 20,
+            "students": 18,
+            "sessions": 10,
+            "hours_per_session": 2
+          },
+          {
+            "room": "R2",
+            "capacity": 16,
+            "students": 12,
+            "sessions": 8,
+            "hours_per_session": 1.5
+          },
+          {
+            "room": "R3",
+            "capacity": 12,
+            "students": 12,
+            "sessions": 10,
+            "hours_per_session": 1
+          },
+          {
+            "room": "R4",
+            "capacity": 25,
+            "students": 15,
+            "sessions": 6,
+            "hours_per_session": 2
+          }
+        ],
+        "available_room_hours_total": 280
+      },
+      "expected": {
+        "capacity_seat_sessions": 598,
+        "enrolled_seat_sessions": 486,
+        "fill_rate": 0.8127090301003345,
+        "booked_room_hours": 54,
+        "utilization": 0.19285714285714287
+      },
+      "actual": {
+        "ok": true,
+        "formula_version": "1.0.0",
+        "result": {
+          "capacity_seat_sessions": 598,
+          "enrolled_seat_sessions": 486,
+          "fill_rate": 0.8127090301003345,
+          "booked_room_hours": 54,
+          "available_room_hours": 280,
+          "utilization": 0.19285714285714287,
+          "unused_room_hours": 226,
+          "unit": "座位课次与小时"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "full_utilization",
+      "input": {
+        "classes": [
+          {
+            "room": "R1",
+            "capacity": 20,
+            "students": 18,
+            "sessions": 10,
+            "hours_per_session": 2
+          },
+          {
+            "room": "R2",
+            "capacity": 16,
+            "students": 12,
+            "sessions": 8,
+            "hours_per_session": 1.5
+          },
+          {
+            "room": "R3",
+            "capacity": 12,
+            "students": 12,
+            "sessions": 10,
+            "hours_per_session": 1
+          },
+          {
+            "room": "R4",
+            "capacity": 25,
+            "students": 15,
+            "sessions": 6,
+            "hours_per_session": 2
+          }
+        ],
+        "available_room_hours_total": 54
+      },
+      "expected": {
+        "utilization": 1
+      },
+      "actual": {
+        "ok": true,
+        "formula_version": "1.0.0",
+        "result": {
+          "capacity_seat_sessions": 598,
+          "enrolled_seat_sessions": 486,
+          "fill_rate": 0.8127090301003345,
+          "booked_room_hours": 54,
+          "available_room_hours": 54,
+          "utilization": 1,
+          "unused_room_hours": 0,
+          "unit": "座位课次与小时"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "over_capacity",
+      "input": {
+        "classes": [
+          {
+            "room": "R1",
+            "capacity": 10,
+            "students": 11,
+            "sessions": 1,
+            "hours_per_session": 1
+          }
+        ],
+        "available_room_hours_total": 10
+      },
+      "expected": {
+        "error": "INPUT_CONFLICT"
+      },
+      "actual": {
+        "ok": false,
+        "error": {
+          "code": "INPUT_CONFLICT",
+          "message": "INPUT_CONFLICT:classes[0].students",
+          "field": "classes[0].students",
+          "formula_version": "1.0.0"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "zero_available",
+      "input": {
+        "classes": [
+          {
+            "room": "R1",
+            "capacity": 20,
+            "students": 18,
+            "sessions": 10,
+            "hours_per_session": 2
+          },
+          {
+            "room": "R2",
+            "capacity": 16,
+            "students": 12,
+            "sessions": 8,
+            "hours_per_session": 1.5
+          },
+          {
+            "room": "R3",
+            "capacity": 12,
+            "students": 12,
+            "sessions": 10,
+            "hours_per_session": 1
+          },
+          {
+            "room": "R4",
+            "capacity": 25,
+            "students": 15,
+            "sessions": 6,
+            "hours_per_session": 2
+          }
+        ],
+        "available_room_hours_total": 0
+      },
+      "expected": {
+        "error": "INPUT_INVALID"
+      },
+      "actual": {
+        "ok": false,
+        "error": {
+          "code": "INPUT_INVALID",
+          "message": "输入缺失或非法",
+          "field": "available_room_hours_total",
+          "formula_version": "1.0.0"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "zero_sessions",
+      "input": {
+        "classes": [
+          {
+            "room": "R1",
+            "capacity": 10,
+            "students": 1,
+            "sessions": 0,
+            "hours_per_session": 1
+          }
+        ],
+        "available_room_hours_total": 10
+      },
+      "expected": {
+        "error": "INPUT_INVALID"
+      },
+      "actual": {
+        "ok": false,
+        "error": {
+          "code": "INPUT_INVALID",
+          "message": "输入缺失或非法",
+          "field": "classes[0].sessions",
+          "formula_version": "1.0.0"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    }
+  ],
+  "deterministic": true,
+  "agent": false,
+  "security": {
+    "external_paid_api": "NONE",
+    "customer_brand_promotion": "FORBIDDEN_AND_SCANNED"
+  },
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "overall_status": "LOCAL_TEST_PASS"
+}
