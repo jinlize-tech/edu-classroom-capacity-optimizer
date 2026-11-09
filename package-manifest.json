@@ -2,10 +2,10 @@
   "product_id": "JLZ-EDU-SK-093",
   "repository_name": "edu-classroom-capacity-optimizer",
   "product_type": "Skill",
-  "version": "1.0.0",
-  "package_path": "dist/edu-classroom-capacity-optimizer-v1.0.0.zip",
-  "sha256": "D4B39B2340E284896FA9052B77BBDF72B7881BBAC4FEAAB4595F19A77D2A4FAC",
-  "bytes": 41827,
+  "version": "1.0.1",
+  "package_path": "dist/edu-classroom-capacity-optimizer-v1.0.1.zip",
+  "sha256": "E67D866A41DF09BB9A24AD293AF06C5252BDE75C45A32DFAA09220E664ECF14A",
+  "bytes": 42870,
   "entries": [
     "edu-classroom-capacity-optimizer/README.md",
     "edu-classroom-capacity-optimizer/PRODUCT_SPEC.md",
@@ -36,5 +36,9 @@
   "license": "Apache-2.0",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "built_at": "2026-11-09T00:00:00+08:00"
+  "built_at": "2026-11-09T12:07:18.805358+00:00",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-classroom-capacity-optimizer-v1.0.0.zip",
+  "previous_package_sha256": "D4B39B2340E284896FA9052B77BBDF72B7881BBAC4FEAAB4595F19A77D2A4FAC",
+  "patch_reason": "README_USAGE_INSTALLATION_AND_PLATFORM_METADATA_FINALIZATION"
 }
